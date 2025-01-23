@@ -24,3 +24,5 @@ const PORT = process.env.PORT || 3000; // default -> 3000
 app.listen(PORT, () => {
   console.log(`-> Server running on the port ${PORT}`);
 });
+
+module.exports = app;
