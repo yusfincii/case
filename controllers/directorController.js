@@ -26,7 +26,7 @@ exports.deleteDirector = async (req, res) => {
   }
 };
 
-// list directos
+// list directors
 exports.getAllDirectors = async (req, res) => {
   try {
     const directors = await Director.find(); // no filter

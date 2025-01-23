@@ -38,8 +38,8 @@ exports.updateMovie = async (req, res) => {
 exports.deleteMovie = async (req, res) => {
   try {
     await Movie.findByIdAndDelete(req.params.id);
-    // 204 -> No Content
-    res.status(204).send();
+    // 200 -> Success
+    res.status(200).send("Movie deleted successfully!");
   } catch (error) {
     res.status(500).json({ message: error.message });
   }
